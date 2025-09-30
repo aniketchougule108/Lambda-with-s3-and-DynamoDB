@@ -9,6 +9,7 @@ This project outlines a serverless media upload hub built using AWS Lambda, S3, 
 ---
 ## Project Architecture Diagram
 ![](./img/Untitled%20Diagram.drawio_page-0001.jpg)
+
 ---
 ## AWS Components and Purpose
 <!DOCTYPE html>
@@ -64,7 +65,6 @@ This project outlines a serverless media upload hub built using AWS Lambda, S3, 
 
 Here are the key aspects of the project, illustrated with screenshots:
 
----
 ### 1. Upload Interface
 
 
@@ -108,7 +108,7 @@ A view of the Python code for the AWS Lambda function, which orchestrates the up
  
  ---
  ### 5. S3 Bucket Overview
- ---
+
  The S3 bucket will be used for secure file storage, enabling temporary access links with expiration policies to ensure data privacy and controlled sharing.
 
 🚀 **Step-by-Step Setup Guide**
@@ -125,9 +125,10 @@ A view of the Python code for the AWS Lambda function, which orchestrates the up
 8. Configure **Bucket Policies** and **IAM Roles** to restrict access.
 
 ![](./img/S3UploadScreenshot.png)
+
 ---
 ### 6. DynamoDB Table Entries
----
+
 The DynamoDB table is designed to store file metadata, allowing secure tracking of files, managing expiration policies, and generating download statistics.  
 It is serverless, highly scalable, and automatically adapts to incoming traffic.
 
@@ -144,23 +145,25 @@ It is serverless, highly scalable, and automatically adapts to incoming traffic.
 7. Click **Create Table** to finalize.
 
 ![](./img/DynamoDBTableScreenshot.png)
+
 ---
+
 ### 7. Successful Upload Confirmation
----
+
 The confirmation message displayed on the web interface after a successful media upload, showing the stored details and file URL.
 
 ![](./img/SuccessfulScreenshot.png)
+
 ---
+
 ## 🔐 8. Security Features
 Ensuring data privacy, controlled access, and system reliability through AWS security best practices.
 
----
 ### 8.1 Access Control
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Security Controls Table</title>
 </head>
 <body>
   <table border="1" cellspacing="0" cellpadding="8">
@@ -194,7 +197,6 @@ Ensuring data privacy, controlled access, and system reliability through AWS sec
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Features and Benefits Table</title>
 </head>
 <body>
   <table border="1" cellspacing="0" cellpadding="8">
@@ -228,7 +230,6 @@ Ensuring data privacy, controlled access, and system reliability through AWS sec
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Logging Table</title>
 </head>
 <body>
   <table border="1" cellspacing="0" cellpadding="8">
