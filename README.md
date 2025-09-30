@@ -65,7 +65,7 @@ This project outlines a serverless media upload hub built using AWS Lambda, S3, 
 
 Here are the key aspects of the project, illustrated with screenshots:
 
-### 1. Upload Interface
+## 1. Upload Interface
 
 
 This image shows the web form used for uploading media, where users input a name, caption, and select a file.
@@ -73,7 +73,7 @@ This image shows the web form used for uploading media, where users input a name
 ![](./img/UploadScreenshot.png)
 
 ---
-### 2. IAM Role Permissions
+## 2. IAM Role Permissions
 
 The IAM Role ensures that the AWS Lambda function securely interacts with S3 and DynamoDB without exposing credentials.
 
@@ -93,21 +93,21 @@ The IAM Role ensures that the AWS Lambda function securely interacts with S3 and
 ![](./img/IAMRoleScreenshot.png)
 
 ---
-### 3. Lambda Function Code
+## 3. Lambda Function Code
 
 A view of the Python code for the AWS Lambda function, which orchestrates the upload to S3 and data entry into DynamoDB. 
 
 ![](./img/LambdacodeScreeshot.png)
 
 ---
-### 4. Lambda Layer Configuration
+## 4. Lambda Layer Configuration
 
  configuration for the mylayer Lambda layer, used for managing dependencies.
 
  ![](./img/LayerScreenshot.png)
  
  ---
- ### 5. S3 Bucket Overview
+ ## 5. S3 Bucket Overview
 
  The S3 bucket will be used for secure file storage, enabling temporary access links with expiration policies to ensure data privacy and controlled sharing.
 
@@ -127,7 +127,7 @@ A view of the Python code for the AWS Lambda function, which orchestrates the up
 ![](./img/S3UploadScreenshot.png)
 
 ---
-### 6. DynamoDB Table Entries
+## 6. DynamoDB Table Entries
 
 The DynamoDB table is designed to store file metadata, allowing secure tracking of files, managing expiration policies, and generating download statistics.  
 It is serverless, highly scalable, and automatically adapts to incoming traffic.
@@ -148,7 +148,7 @@ It is serverless, highly scalable, and automatically adapts to incoming traffic.
 
 ---
 
-### 7. Successful Upload Confirmation
+## 7. Successful Upload Confirmation
 
 The confirmation message displayed on the web interface after a successful media upload, showing the stored details and file URL.
 
